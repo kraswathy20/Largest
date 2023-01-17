@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>GREATEST</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD"
+      crossorigin="anonymous"
+    />
+  </head>
+  <body>
+    <div class="container">
+      <div class="row">
+        <!-- <div class="col-md-4"></div> -->
+
+        <div
+          class="col-sm-6 col-lg-4 container w-50 text-center mt-5 p-3 border bg-light"
+        >
+          <h1 class="text-warning">Greatest of two numbers</h1>
+          <input
+            type="text"
+            class="form-control mt-4"
+            placeholder="Enter first number"
+            id="one"
+          />
+          <input
+            type="text"
+            class="form-control mt-4"
+            placeholder="Enter second number"
+            id="two"
+          />
+          <button
+            type="submit"
+            class="btn btn-outline-success mt-5"
+            onclick="greatest()"
+          >
+            check
+          </button>
+        </div>
+        <!-- <div class="col-md-4"></div> -->
+      </div>
+    </div>
+  </body>
+  <script>
+    function greatest() {
+      a = one.value;
+      b = two.value;
+      if (a > b) {
+        swal("The First Number is greatest!!");
+      } else if (b > a) {
+        swal("The Second Number is greatest!!");
+      } else {
+        swal("Both Are Equal!!");
+      }
+    }
+  </script>
+  <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+</html>
